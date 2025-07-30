@@ -67,7 +67,7 @@ Librerías Principales: **pandas, requests, boto3**
 
 * Crea un Rol de IAM con los permisos necesarios (AWSLambdaBasicExecutionRole y AmazonS3FullAccess).
 
-* Crea una función Lambda utilizando el código de lambda_function.py.
+* Crea una función Lambda utilizando el código de `lambda_function.py`.
 
 **Importante:**
 
