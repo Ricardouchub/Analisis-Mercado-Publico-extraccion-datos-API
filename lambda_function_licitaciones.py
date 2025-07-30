@@ -1,10 +1,10 @@
 import json
 import requests
 import pandas as pd
-import boto3 # SDK de AWS para Python
+import boto3 
 from datetime import datetime
 
-# --- CONFIGURACIÓN ---
+# CONFIGURACIÓN
 # Reemplaza con el nombre de tu bucket
 NOMBRE_BUCKET = "NOMBRE_S3_BUCKET" 
 # Tu ticket de la API
@@ -12,7 +12,7 @@ MI_TICKET = "CAMBIAR_POR_TU_KEY_AQUI"
 
 def lambda_handler(event, context):
     """
-    Función Lambda que obtiene datos de la API de Mercado Público
+    Función Lambda que obtiene las LICITACIONES de la API
     y los guarda en un nuevo archivo CSV diario en un bucket de S3.
     """
     # Generar el nombre del archivo con la fecha de hoy
