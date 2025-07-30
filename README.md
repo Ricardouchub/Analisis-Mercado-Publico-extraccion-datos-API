@@ -55,9 +55,42 @@ Lenguaje: **Python 3.9**
 Librerías Principales: **pandas, requests, boto3**
 
 ---
+## Cómo Reproducir la Pipeline
 
-## Fase 2: Análisis de Datos y Detección de Anomalías
-(Esta sección se completará a medida que se obtengan datos)
+**Prerrequisitos:**
+
+* Una cuenta de AWS con permisos para crear recursos en IAM, S3, Lambda y EventBridge.
+
+* Un "Ticket" (API Key) válido de la API de Mercado Público.
+
+**Crear un Bucket en S3:** Configura un bucket de S3 que servirá como el almacén para los archivos CSV diarios.
+
+**Desplegar la Función Lambda:**
+
+* Crea un Rol de IAM con los permisos necesarios (AWSLambdaBasicExecutionRole y AmazonS3FullAccess).
+
+* Crea una función Lambda utilizando el código de lambda_function.py.
+
+**Importante:**
+
+Antes de desplegar, debes modificar las siguientes variables en el script con tus propios valores al principio del script:
+
+`# Reemplaza con el nombre de tu bucket`
+
+`NOMBRE_BUCKET = "NOMBRE_DE_TU_BUCKET_S3"`
+
+`# Tu ticket de la API`
+
+`MI_TICKET = "TICKET_DE_LA_API"`
+
+**Automatizar con EventBridge:** 
+
+Crea una regla de programación en Amazon EventBridge que active la función Lambda diariamente en el horario que prefieras.
+
+---
+
+## Fase 2: Análisis de Datos y Detección de Anomalías (en proceso)
+(Esta sección se completará a medida que se obtengan datos para poder determinar el flujo del pipeline)
 
 Una vez que el pipeline haya recolectado un volumen de datos suficiente, se procederá a:
 
