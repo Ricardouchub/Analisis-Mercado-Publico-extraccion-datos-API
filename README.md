@@ -57,7 +57,7 @@ Librerías Principales: **pandas, requests, boto3**
 ---
 
 ## Fase 2: Análisis de Datos y Detección de Anomalías
-(Esta sección se completará a medida que avance el análisis)
+(Esta sección se completará a medida que se obtengan datos)
 
 Una vez que el pipeline haya recolectado un volumen de datos suficiente, se procederá a:
 
@@ -65,10 +65,4 @@ Carga y Limpieza: Leer los archivos CSV diarios desde S3, unificarlos en un solo
 
 Análisis Exploratorio (EDA): Investigar las distribuciones, identificar proveedores y organismos con mayor actividad, y analizar la frecuencia de los tipos de compra.
 
-Detección de Banderas Rojas: Aplicar reglas de negocio y modelos estadísticos para identificar anomalías como:
-
-Licitaciones recurrentes con un solo oferente.
-
-Adjudicaciones con precios sistemáticamente altos.
-
-Proveedores sin historial que obtienen contratos de alto valor.
+Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para identificar red flags.
