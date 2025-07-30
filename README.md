@@ -5,13 +5,11 @@ Este proyecto busca identificar patrones de compra inusuales y potenciales "red 
 
 El proyecto está dividido en dos fases principales:
 
-* **Fase 1: Ingeniería de Datos** - Construcción de un pipeline automatizado para la recolección de datos.
+* **Fase 1: Ingesta de datos** - Construcción de un pipeline automatizado para la recolección de datos.
 * **Fase 2: Análisis de Datos** - Exploración y modelado de los datos para la detección de anomalías.
 
 ---
 ## Fase 1: Pipeline de Datos en AWS
-
-### El Desafío: Recolección de Datos Históricos
 
 Durante la exploración inicial, se descubrió una limitación crítica en la API de Mercado Público: **el endpoint no permite realizar consultas para fechas pasadas de manera fiable**, devolviendo errores al intentar acceder a datos históricos. La API está diseñada para entregar únicamente datos muy recientes (de las últimas 24-48 horas).
 
@@ -86,6 +84,8 @@ Antes de desplegar, debes modificar las siguientes variables en el script con tu
 **Automatizar con EventBridge:** 
 
 Crea una regla de programación en Amazon EventBridge que active la función Lambda diariamente en el horario que prefieras.
+
+**Puedes probar el funcionamiento correcto de tu API Key con el notebook de la carpeta `prueba local`**
 
 ---
 
