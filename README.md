@@ -68,7 +68,8 @@ graph TD
 
 * Crea un Rol de IAM con los permisos necesarios (AWSLambdaBasicExecutionRole y AmazonS3FullAccess).
 
-* Crea una función Lambda utilizando el código de `lambda_function.py`.
+* Crea la primera función Lambda utilizando el script `lambda_function_licitaciones.py`.
+* Crea la segunda función Lambda utilizando el script `lambda_function_ordenescompra.py`.
 
 **Importante:**
 
