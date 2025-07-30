@@ -1,4 +1,4 @@
-# Detección de red flags en Compras Públicas de Chile
+# Detección de anomalías en el Mercado Público de Chile
 
 ## Objetivo del Proyecto
 
