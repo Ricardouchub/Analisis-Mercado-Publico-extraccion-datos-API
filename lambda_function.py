@@ -6,7 +6,7 @@ from datetime import datetime
 
 # --- CONFIGURACIÓN ---
 # Reemplaza con el nombre de tu bucket
-NOMBRE_BUCKET = "datos-mercadopublico-cl-tu-nombre" 
+NOMBRE_BUCKET = "NOMBRE_S3_BUCKET" 
 # Tu ticket de la API
 MI_TICKET = "CAMBIAR_POR_TU_KEY_AQUI" 
 
