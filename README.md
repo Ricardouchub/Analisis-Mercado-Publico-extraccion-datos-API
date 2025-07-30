@@ -85,7 +85,7 @@ Antes de desplegar, debes modificar las siguientes variables en el script con tu
 
 Crea una regla de programación en Amazon EventBridge que active la función Lambda diariamente en el horario que prefieras.
 
-**Puedes probar el funcionamiento correcto de tu API Key con el notebook de la carpeta `prueba local`**
+**Puedes probar el funcionamiento correcto de la API y de tu API Key con el notebook de la carpeta `prueba local`**
 
 ---
 
