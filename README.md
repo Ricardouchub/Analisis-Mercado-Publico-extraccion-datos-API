@@ -1,2 +1,73 @@
-# Analisis Mercado Publico extraccion datos API
+# Detección de red flags en Compras Públicas de Chile
 
+## Objetivo del Proyecto
+
+Este proyecto busca identificar patrones de compra inusuales y potenciales "red flags" dentro de los datos de Mercado Público de Chile. El objetivo es desarrollar un sistema de análisis que pueda alertar sobre transacciones con características atípicas, tales como licitaciones con un único oferente, adjudicaciones por montos cercanos al máximo presupuestado, o la concentración de contratos en proveedores nuevos.
+
+El proyecto está dividido en dos fases principales:
+
+1.  **Parte 1: Ingeniería de Datos** - Construcción de un pipeline automatizado para la recolección de datos.
+2.  **Parte 2: Análisis de Datos** - Exploración y modelado de los datos para la detección de anomalías.
+
+---
+## Fase 1: Pipeline de Datos en AWS
+
+### El Desafío: Recolección de Datos Históricos
+
+Durante la exploración inicial, se descubrió una limitación crítica en la API de Mercado Público: **el endpoint no permite realizar consultas para fechas pasadas de manera fiable**, devolviendo errores al intentar acceder a datos históricos. La API está diseñada para entregar únicamente datos muy recientes (de las últimas 24-48 horas).
+
+Para superar este obstáculo, en lugar de una extracción masiva única, se diseñó y construyó un **pipeline de datos diario y automatizado** en Amazon Web Services (AWS). Esta solución recolecta los datos cada día y los almacena de forma incremental, construyendo un dataset histórico a lo largo del tiempo.
+
+### Arquitectura del Pipeline
+
+El siguiente diagrama ilustra el flujo de trabajo automatizado:
+
+```mermaid
+graph TD
+    subgraph "Programación"
+        A[Amazon EventBridge]
+    end
+
+    subgraph "Ejecución"
+        B[Función AWS Lambda]
+    end
+
+    subgraph "Almacenamiento"
+        C[Bucket Amazon S3]
+    end
+
+    A --"Activa la función cada día"--> B
+    B --"Llama a la API de Mercado Público"--> D{API Externa}
+    D --"Devuelve datos recientes (JSON)"--> B
+    B --"Procesa y guarda un nuevo archivo CSV con la fecha del día"--> C
+```
+
+### Tecnologías Utilizadas
+Cloud: Amazon Web Services (AWS)
+
+Computación Serverless: AWS Lambda
+
+Almacenamiento: Amazon S3
+
+Programación y Orquestación: Amazon EventBridge
+
+Lenguaje: Python 3.9
+
+Librerías Principales: pandas, requests, boto3
+
+## Fase 2: Análisis de Datos y Detección de Anomalías
+(Esta sección se completará a medida que avance el análisis)
+
+Una vez que el pipeline haya recolectado un volumen de datos suficiente, se procederá a:
+
+Carga y Limpieza: Leer los archivos CSV diarios desde S3, unificarlos en un solo DataFrame y realizar la limpieza y preprocesamiento de los datos.
+
+Análisis Exploratorio (EDA): Investigar las distribuciones, identificar proveedores y organismos con mayor actividad, y analizar la frecuencia de los tipos de compra.
+
+Detección de Banderas Rojas: Aplicar reglas de negocio y modelos estadísticos para identificar anomalías como:
+
+Licitaciones recurrentes con un solo oferente.
+
+Adjudicaciones con precios sistemáticamente altos.
+
+Proveedores sin historial que obtienen contratos de alto valor.
