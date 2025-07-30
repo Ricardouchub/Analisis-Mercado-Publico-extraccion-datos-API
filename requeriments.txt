@@ -1,3 +1,9 @@
+# Para la ingesta de datos (Fase 1)
 pandas
 requests
 boto3
+
+# Para el análisis y visualización (Fase 2)
+matplotlib
+seaborn
+scikit-learn
