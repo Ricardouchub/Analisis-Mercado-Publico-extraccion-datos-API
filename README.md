@@ -6,8 +6,8 @@ Este proyecto busca identificar patrones de compra inusuales y potenciales "red 
 
 El proyecto está dividido en dos fases principales:
 
-* **Parte 1: Ingeniería de Datos** - Construcción de un pipeline automatizado para la recolección de datos.
-* **Parte 2: Análisis de Datos** - Exploración y modelado de los datos para la detección de anomalías.
+* **Fase 1: Ingeniería de Datos** - Construcción de un pipeline automatizado para la recolección de datos.
+* **Fase 2: Análisis de Datos** - Exploración y modelado de los datos para la detección de anomalías.
 
 ---
 ## Fase 1: Pipeline de Datos en AWS
@@ -43,17 +43,19 @@ graph TD
 ```
 
 ### Tecnologías Utilizadas
-Cloud: Amazon Web Services (AWS)
+Cloud: **Amazon Web Services (AWS)**
 
-Computación Serverless: AWS Lambda
+Computación Serverless: **AWS Lambda**
 
-Almacenamiento: Amazon S3
+Almacenamiento: **Amazon S3**
 
-Programación y Orquestación: Amazon EventBridge
+Programación y Orquestación: **Amazon EventBridge**
 
-Lenguaje: Python 3.9
+Lenguaje: **Python 3.9**
 
-Librerías Principales: pandas, requests, boto3
+Librerías Principales: **pandas, requests, boto3**
+
+---
 
 ## Fase 2: Análisis de Datos y Detección de Anomalías
 (Esta sección se completará a medida que avance el análisis)
