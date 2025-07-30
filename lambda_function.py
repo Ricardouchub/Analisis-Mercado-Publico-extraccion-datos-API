@@ -50,7 +50,7 @@ def lambda_handler(event, context):
         Body=csv_buffer
     )
     
-    print(f"✅ Proceso completado. {len(df_nuevos)} registros guardados en '{nombre_archivo}'.")
+    print(f"Proceso completado. {len(df_nuevos)} registros guardados en '{nombre_archivo}'.")
     
     return {
         'statusCode': 200,
