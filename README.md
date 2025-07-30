@@ -45,6 +45,8 @@ graph TD
   <a href="https://aws.amazon.com/lambda/" target="_blank"> <img src="https://img.shields.io/badge/AWS%20Lambda-%23FF9900.svg?style=for-the-badge&logo=aws-lambda&logoColor=white" alt="aws lambda"/> </a> 
   <a href="https://aws.amazon.com/s3/" target="_blank"> <img src="https://img.shields.io/badge/Amazon%20S3-%23569A31.svg?style=for-the-badge&logo=amazon-s3&logoColor=white" alt="amazon s3"/> </a> 
   <a href="https://aws.amazon.com/eventbridge/" target="_blank"> <img src="https://img.shields.io/badge/Amazon%20EventBridge-%23EF3422.svg?style=for-the-badge&logo=amazon-eventbridge&logoColor=white" alt="amazon eventbridge"/> </a> 
+
+    
   <a href="https://www.python.org" target="_blank"> <img src="https://img.shields.io/badge/Python-3.9-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python"/> </a> 
   <a href="https://pandas.pydata.org/" target="_blank"> <img src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/> </a> 
   <a href="https://requests.readthedocs.io/" target="_blank"> <img src="https://img.shields.io/badge/Requests-%23E44D40.svg?style=for-the-badge&logo=requests&logoColor=white" alt="requests"/> </a> 
