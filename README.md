@@ -101,3 +101,11 @@ Carga y Limpieza: Leer los archivos CSV diarios desde S3, unificarlos en un solo
 Análisis Exploratorio (EDA): Investigar las distribuciones, identificar proveedores y organismos con mayor actividad, y analizar la frecuencia de los tipos de compra.
 
 Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para identificar red flags.
+
+
+## Autor
+
+**Ricardo Urdaneta**
+
+* [GitHub](https://github.com/Ricardouchub)
+* [LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
