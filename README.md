@@ -106,9 +106,10 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 
 ## Estructura del Repositorio
 
-* `Carpeta local`
-* `Parte 2 - Limpieza y Analisis Exploratorio.ipynb` Notebook con el proceso de limpieza, análisis y visualización.
-* `/data`: Carpeta que contiene los datasets generados.
+* `prueba local` Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
+* `lambda_function_licitaciones.py`
+* `lambda_function_ordenescompra.py`
+* `requeriments.txt`
 
 ---
 ## Autor
