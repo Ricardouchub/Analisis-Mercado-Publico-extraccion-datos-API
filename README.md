@@ -102,7 +102,15 @@ Análisis Exploratorio (EDA): Investigar las distribuciones, identificar proveed
 
 Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para identificar red flags.
 
+---
 
+## Estructura del Repositorio
+
+* `Carpeta local`
+* `Parte 2 - Limpieza y Analisis Exploratorio.ipynb` Notebook con el proceso de limpieza, análisis y visualización.
+* `/data`: Carpeta que contiene los datasets generados.
+
+---
 ## Autor
 
 **Ricardo Urdaneta**
