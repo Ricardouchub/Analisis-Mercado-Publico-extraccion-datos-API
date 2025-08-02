@@ -6,7 +6,7 @@ Este proyecto busca identificar patrones de compra inusuales y potenciales "red 
 El proyecto está dividido en dos fases principales:
 
 * **Fase 1: Ingesta de datos** - Construcción de un pipeline automatizado para la recolección de datos.
-* **Fase 2: Análisis de Datos** - Exploración y modelado de los datos para la detección de anomalías.
+* **Fase 2: Análisis de datos** - Exploración y modelado de los datos para la detección de anomalías.
 
 ---
 ## Fase 1: Pipeline de Datos en AWS
