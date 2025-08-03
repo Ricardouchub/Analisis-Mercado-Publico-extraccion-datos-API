@@ -29,25 +29,8 @@ Para superar este obstáculo, en lugar de una extracción masiva única, se dise
 
 El siguiente diagrama ilustra el flujo de trabajo automatizado:
 
-```mermaid
-graph TD
-    subgraph "Programación"
-        A[Amazon EventBridge]
-    end
+<img width="1039" height="639" alt="image" src="https://github.com/user-attachments/assets/3bf91505-5041-4e26-9e11-3e7117d64cc2" />
 
-    subgraph "Ejecución"
-        B[Función AWS Lambda]
-    end
-
-    subgraph "Almacenamiento"
-        C[Bucket Amazon S3]
-    end
-
-    A --"Activa la función cada día"--> B
-    B --"Llama a la API de Mercado Público"--> D{API Externa}
-    D --"Devuelve datos recientes (JSON)"--> B
-    B --"Procesa y guarda un nuevo archivo CSV con la fecha del día"--> C
-```
 
 ### Tecnologías Utilizadas
 <p align="left"> 
