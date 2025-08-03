@@ -116,10 +116,10 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 
 ## Estructura del Repositorio
 
-* `prueba local` Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
-* `lambda_function_licitaciones.py`
-* `lambda_function_ordenescompra.py`
-* `requeriments.txt`
+* **`lambda_function_licitaciones.py`** Script para recolección de licitaciones desde la API.
+* **`lambda_function_ordenescompra.py`** Script para recolección de ordenes de compra desde la API.
+* **`requeriments.txt`**
+* **`/prueba local`** Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
 
 ---
 ## Autor
