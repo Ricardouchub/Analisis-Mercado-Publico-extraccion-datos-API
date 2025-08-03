@@ -1,4 +1,14 @@
 # Detección de anomalías en el Mercado Público de Chile
+<p align="left"> 
+  <a href="https://aws.amazon.com" target="_blank"> <img src="https://img.shields.io/badge/AWS-%23232F3E.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="aws"/> </a> 
+  <a href="https://aws.amazon.com/lambda/" target="_blank"> <img src="https://img.shields.io/badge/AWS%20Lambda-%23FF9900.svg?style=for-the-badge&logo=aws-lambda&logoColor=white" alt="aws lambda"/> </a> 
+  <a href="https://aws.amazon.com/s3/" target="_blank"> <img src="https://img.shields.io/badge/Amazon%20S3-%23569A31.svg?style=for-the-badge&logo=amazon-s3&logoColor=white" alt="amazon s3"/> </a> 
+  <a href="https://aws.amazon.com/eventbridge/" target="_blank"> <img src="https://img.shields.io/badge/Amazon%20EventBridge-%23EF3422.svg?style=for-the-badge&logo=amazon-eventbridge&logoColor=white" alt="amazon eventbridge"/> </a> 
+  <a href="https://www.python.org" target="_blank"> <img src="https://img.shields.io/badge/Python-3.9-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python"/> </a> 
+  <a href="https://pandas.pydata.org/" target="_blank"> <img src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/> </a> 
+  <a href="https://requests.readthedocs.io/" target="_blank"> <img src="https://img.shields.io/badge/Requests-%23E44D40.svg?style=for-the-badge&logo=requests&logoColor=white" alt="requests"/> </a> 
+  <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" target="_blank"> <img src="https://img.shields.io/badge/Boto3-%23FF9900.svg?style=for-the-badge&logo=boto3&logoColor=white" alt="boto3"/> </a> 
+</p>
 
 
 Este proyecto busca identificar patrones de compra inusuales y potenciales "red flags" dentro de los datos de Mercado Público de Chile. El objetivo es desarrollar un sistema de análisis que pueda alertar sobre transacciones con características atípicas, tales como licitaciones con un único oferente, adjudicaciones por montos cercanos al máximo presupuestado, o la concentración de contratos en proveedores nuevos.
