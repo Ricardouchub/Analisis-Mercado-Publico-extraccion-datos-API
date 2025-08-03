@@ -29,7 +29,8 @@ Para superar este obstáculo, en lugar de una extracción masiva única, se dise
 
 El siguiente diagrama ilustra el flujo de trabajo automatizado:
 
-<img width="1039" height="639" alt="image" src="https://github.com/user-attachments/assets/3bf91505-5041-4e26-9e11-3e7117d64cc2" />
+<img width="830" height="501" alt="image" src="https://github.com/user-attachments/assets/ad28845d-2909-4ef9-b959-849e2ae47374" />
+
 
 
 ### Tecnologías Utilizadas
