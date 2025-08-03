@@ -6,7 +6,7 @@ Este proyecto busca identificar patrones de compra inusuales y potenciales "red 
 El proyecto está dividido en dos fases principales:
 
 * **Fase 1: Ingesta de datos** - Construcción de un pipeline automatizado para la recolección de datos.
-* **Fase 2: Análisis de Datos** - Exploración y modelado de los datos para la detección de anomalías.
+* **Fase 2: Análisis de datos** - Exploración y modelado de los datos para la detección de anomalías.
 
 ---
 ## Fase 1: Pipeline de Datos en AWS
@@ -101,3 +101,20 @@ Carga y Limpieza: Leer los archivos CSV diarios desde S3, unificarlos en un solo
 Análisis Exploratorio (EDA): Investigar las distribuciones, identificar proveedores y organismos con mayor actividad, y analizar la frecuencia de los tipos de compra.
 
 Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para identificar red flags.
+
+---
+
+## Estructura del Repositorio
+
+* `prueba local` Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
+* `lambda_function_licitaciones.py`
+* `lambda_function_ordenescompra.py`
+* `requeriments.txt`
+
+---
+## Autor
+
+**Ricardo Urdaneta**
+
+* [GitHub](https://github.com/Ricardouchub)
+* [LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
