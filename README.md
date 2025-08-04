@@ -1,13 +1,21 @@
 # Detección de anomalías en el Mercado Público de Chile
 <p align="left"> 
-  <a href="https://aws.amazon.com" target="_blank"> <img src="https://img.shields.io/badge/AWS-%23232F3E.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="aws"/> </a> 
-  <a href="https://aws.amazon.com/lambda/" target="_blank"> <img src="https://img.shields.io/badge/AWS%20Lambda-%23FF9900.svg?style=for-the-badge&logo=aws-lambda&logoColor=white" alt="aws lambda"/> </a> 
-  <a href="https://aws.amazon.com/s3/" target="_blank"> <img src="https://img.shields.io/badge/Amazon%20S3-%23569A31.svg?style=for-the-badge&logo=amazon-s3&logoColor=white" alt="amazon s3"/> </a> 
-  <a href="https://aws.amazon.com/eventbridge/" target="_blank"> <img src="https://img.shields.io/badge/Amazon%20EventBridge-%23EF3422.svg?style=for-the-badge&logo=amazon-eventbridge&logoColor=white" alt="amazon eventbridge"/> </a> 
-  <a href="https://www.python.org" target="_blank"> <img src="https://img.shields.io/badge/Python-3.9-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python"/> </a> 
-  <a href="https://pandas.pydata.org/" target="_blank"> <img src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas"/> </a> 
-  <a href="https://requests.readthedocs.io/" target="_blank"> <img src="https://img.shields.io/badge/Requests-%23E44D40.svg?style=for-the-badge&logo=requests&logoColor=white" alt="requests"/> </a> 
-  <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" target="_blank"> <img src="https://img.shields.io/badge/Boto3-%23FF9900.svg?style=for-the-badge&logo=boto3&logoColor=white" alt="boto3"/> </a> 
+  <a href="https://aws.amazon.com" target="blank">
+    <img src="https://img.shields.io/badge/AWS-Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS"/></a>
+  <a href="https://aws.amazon.com/lambda/" target="blank">
+    <img src="https://img.shields.io/badge/AWS-Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white" alt="AWS Lambda"/></a>
+  <a href="https://aws.amazon.com/s3/" target="blank">
+    <img src="https://img.shields.io/badge/AWS-S3-569A31?style=flat-square&logo=amazons3&logoColor=white" alt="Amazon S3"/></a>
+  <a href="https://aws.amazon.com/eventbridge/" target="blank">
+    <img src="https://img.shields.io/badge/AWS-EventBridge-EF3422?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon EventBridge"/></a>
+  <a href="https://www.python.org" target="blank">
+    <img src="https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/></a>
+  <a href="https://pandas.pydata.org/" target="blank">
+    <img src="https://img.shields.io/badge/Pandas-Enabled-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/></a>
+  <a href="https://requests.readthedocs.io/" target="blank">
+    <img src="https://img.shields.io/badge/Requests-HTTP-E44D40?style=flat-square&logo=python&logoColor=white" alt="Requests"/></a>
+  <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" target="blank">
+    <img src="https://img.shields.io/badge/Boto3-Client-007AFF?style=flat-square&logo=amazonaws&logoColor=white" alt="Boto3"/></a>
 </p>
 
 
