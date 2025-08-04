@@ -13,8 +13,6 @@
     <img src="https://img.shields.io/badge/AWS-EventBridge-EF3422?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon EventBridge"/></a>
   <a href="https://www.python.org" target="blank">
     <img src="https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/></a>
-  <a href="https://pandas.pydata.org/" target="blank">
-    <img src="https://img.shields.io/badge/Pandas-Enabled-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/></a>
   <a href="https://requests.readthedocs.io/" target="blank">
     <img src="https://img.shields.io/badge/Requests-HTTP-E44D40?style=flat-square&logo=python&logoColor=white" alt="Requests"/></a>
   <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" target="blank">
