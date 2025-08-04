@@ -1,4 +1,22 @@
 # Detección de anomalías en el Mercado Público de Chile
+<p align="left"> 
+  <a href="https://aws.amazon.com" target="blank">
+    <img src="https://img.shields.io/badge/AWS-Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS"/></a>
+  <a href="https://aws.amazon.com/lambda/" target="blank">
+    <img src="https://img.shields.io/badge/AWS-Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white" alt="AWS Lambda"/></a>
+  <a href="https://aws.amazon.com/s3/" target="blank">
+    <img src="https://img.shields.io/badge/AWS-S3-569A31?style=flat-square&logo=amazons3&logoColor=white" alt="Amazon S3"/></a>
+  <a href="https://aws.amazon.com/eventbridge/" target="blank">
+    <img src="https://img.shields.io/badge/AWS-EventBridge-EF3422?style=flat-square&logo=amazonaws&logoColor=white" alt="Amazon EventBridge"/></a>
+  <a href="https://www.python.org" target="blank">
+    <img src="https://img.shields.io/badge/Python-3.9-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/></a>
+  <a href="https://pandas.pydata.org/" target="blank">
+    <img src="https://img.shields.io/badge/Pandas-Enabled-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/></a>
+  <a href="https://requests.readthedocs.io/" target="blank">
+    <img src="https://img.shields.io/badge/Requests-HTTP-E44D40?style=flat-square&logo=python&logoColor=white" alt="Requests"/></a>
+  <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html" target="blank">
+    <img src="https://img.shields.io/badge/Boto3-Client-007AFF?style=flat-square&logo=amazonaws&logoColor=white" alt="Boto3"/></a>
+</p>
 
 
 Este proyecto busca identificar patrones de compra inusuales y potenciales "red flags" dentro de los datos de Mercado Público de Chile. El objetivo es desarrollar un sistema de análisis que pueda alertar sobre transacciones con características atípicas, tales como licitaciones con un único oferente, adjudicaciones por montos cercanos al máximo presupuestado, o la concentración de contratos en proveedores nuevos.
@@ -19,25 +37,9 @@ Para superar este obstáculo, en lugar de una extracción masiva única, se dise
 
 El siguiente diagrama ilustra el flujo de trabajo automatizado:
 
-```mermaid
-graph TD
-    subgraph "Programación"
-        A[Amazon EventBridge]
-    end
+<img width="830" height="501" alt="image" src="https://github.com/user-attachments/assets/ad28845d-2909-4ef9-b959-849e2ae47374" />
 
-    subgraph "Ejecución"
-        B[Función AWS Lambda]
-    end
 
-    subgraph "Almacenamiento"
-        C[Bucket Amazon S3]
-    end
-
-    A --"Activa la función cada día"--> B
-    B --"Llama a la API de Mercado Público"--> D{API Externa}
-    D --"Devuelve datos recientes (JSON)"--> B
-    B --"Procesa y guarda un nuevo archivo CSV con la fecha del día"--> C
-```
 
 ### Tecnologías Utilizadas
 <p align="left"> 
@@ -106,10 +108,10 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 
 ## Estructura del Repositorio
 
-* `prueba local` Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
-* `lambda_function_licitaciones.py`
-* `lambda_function_ordenescompra.py`
-* `requeriments.txt`
+* **`lambda_function_licitaciones.py`** Script para recolección de licitaciones desde la API.
+* **`lambda_function_ordenescompra.py`** Script para recolección de ordenes de compra desde la API.
+* **`requeriments.txt`**
+* **`/prueba local`** Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
 
 ---
 ## Autor
