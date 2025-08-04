@@ -1,5 +1,8 @@
 # Detección de anomalías en el Mercado Público de Chile
+
+
 <p align="left"> 
+  <img src="https://img.shields.io/badge/Proyecto_en_Proceso-%F0%9F%94%8B-F1C40F?style=flat-square&logo=progress&logoColor=white" alt="Proyecto en Proceso"/>
   <a href="https://aws.amazon.com" target="blank">
     <img src="https://img.shields.io/badge/AWS-Cloud-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS"/></a>
   <a href="https://aws.amazon.com/lambda/" target="blank">
@@ -111,7 +114,7 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 * **`lambda_function_licitaciones.py`** Script para recolección de licitaciones desde la API.
 * **`lambda_function_ordenescompra.py`** Script para recolección de ordenes de compra desde la API.
 * **`requeriments.txt`**
-* **`/prueba local`** Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
+* **`/prueba local/`** Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
 
 ---
 ## Autor
