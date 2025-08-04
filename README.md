@@ -121,5 +121,4 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 
 **Ricardo Urdaneta**
 
-* [GitHub](https://github.com/Ricardouchub)
-* [LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
+[LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
