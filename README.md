@@ -45,43 +45,44 @@ El siguiente diagrama ilustra el flujo de trabajo automatizado:
 ---
 ## Cómo Reproducir la Pipeline
 
-**Prerrequisitos:**
+* **Prerrequisitos:**
 
-* Una cuenta de AWS con permisos para crear recursos en IAM, S3, Lambda y EventBridge.
+  Cuenta de AWS con permisos para crear recursos en IAM, S3, Lambda y EventBridge.
 
-* Un "Ticket" (API Key) válido de la API de Mercado Público.
+  "Ticket" (API Key) válido de la API de Mercado Público.
 
-**Crear un Bucket en S3:** Configura un bucket de S3 que servirá como el almacén para los archivos CSV diarios.
+* **Crear un Bucket en S3:** Configura un bucket de S3 que servirá como el almacén para los archivos CSV diarios.
 
-**Desplegar la Función Lambda:**
+* **Desplegar la Función Lambda:**
 
-* Crea un Rol de IAM con los permisos necesarios (AWSLambdaBasicExecutionRole y AmazonS3FullAccess).
-
-* Crea la primera función Lambda utilizando el script `lambda_function_licitaciones.py`.
-* Crea la segunda función Lambda utilizando el script `lambda_function_ordenescompra.py`.
+  Crea un Rol de IAM con los permisos necesarios (AWSLambdaBasicExecutionRole y AmazonS3FullAccess).
+  
+  Crea la primera función Lambda utilizando el script `lambda_function_licitaciones.py`.
+  
+  Crea la segunda función Lambda utilizando el script `lambda_function_ordenescompra.py`.
 
 **Importante:**
 
-Antes de desplegar, debes modificar las siguientes variables en el script con tus propios valores al principio del script:
+  Antes de desplegar, debes modificar las siguientes variables en el script con tus propios valores al principio del script:
 
-`# Reemplaza con el nombre de tu bucket`
+      `# Reemplaza con el nombre de tu bucket`
 
-`NOMBRE_BUCKET = "NOMBRE_DE_TU_BUCKET_S3"`
+      `NOMBRE_BUCKET = "NOMBRE_DE_TU_BUCKET_S3"`
 
-`# Tu ticket de la API`
+      `# Tu ticket de la API`
 
-`MI_TICKET = "TICKET_DE_LA_API"`
+      `MI_TICKET = "TICKET_DE_LA_API"`
 
-**Automatizar con EventBridge:** 
+* **Automatizar con EventBridge:** 
 
-Crea una regla de programación en Amazon EventBridge que active la función Lambda diariamente en el horario que prefieras.
+  Crea una regla de programación en Amazon EventBridge que active la función Lambda diariamente en el horario que prefieras.
 
 **Puedes probar el funcionamiento correcto de la API y de tu API Key con el notebook de la carpeta `prueba local`**
 
 ---
 
 ## Fase 2: Análisis de Datos y Detección de Anomalías (en proceso)
-(Esta sección se completará a medida que se obtengan datos para poder determinar el flujo del pipeline)
+`Esta sección se completará a medida que se obtengan datos para poder determinar el flujo del pipeline`
 
 Una vez que el pipeline haya recolectado un volumen de datos suficiente, se procederá a:
 
@@ -97,7 +98,7 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 
 * **`lambda_function_licitaciones.py`** Script para recolección de licitaciones desde la API.
 * **`lambda_function_ordenescompra.py`** Script para recolección de ordenes de compra desde la API.
-* **`requeriments.txt`**
+* **`requirements.txt`**
 * **`/prueba local/`** Carpeta que contiene un notebook para hacer una prueba local de la API y de la API Key obtenida.
 
 ---
@@ -106,3 +107,14 @@ Detección de anomalías: Aplicar reglas de negocio y modelos estadísticos para
 **Ricardo Urdaneta**
 
 [LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
+
+---
+
+## Extracción diaria del script
+
+
+<img width="1284" height="495" alt="image" src="https://github.com/user-attachments/assets/20488d68-0335-48c4-b7d0-c5f4e30dc3f4" />
+
+<img width="1280" height="447" alt="image" src="https://github.com/user-attachments/assets/68fead4a-c5a9-47a3-9bbb-377f216838f5" />
+
+
